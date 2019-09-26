@@ -1,13 +1,13 @@
 import * as core from '@actions/core';
-import * as github from '@actions/github';
+import dispatch from './dispatch';
 
 async function run() {
   try {
     const command = core.getInput('command');
 
-    console.log(github.context.payload);
-
     console.log(`Received ${command} ...`);
+
+    dispatch(command);
   } catch (error) {
     core.setFailed(error.message);
   }
