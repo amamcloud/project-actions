@@ -1,5 +1,7 @@
+import addToProject from "./add-to-project";
 import noop from './noop';
 
 export default {
-  noop,
+  'add-to-project': addToProject,
+  'noop': noop,
 };
