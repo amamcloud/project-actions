@@ -1,11 +1,6 @@
+import './polyfill';
 import * as core from '@actions/core';
 import dispatch from './dispatch';
-
-declare var navigator: { userAgent: string };
-
-if (!navigator) {
-  eval("something = { userAgent: 'AmAmCloud Github Actions' };");
-}
 
 async function run() {
   try {
