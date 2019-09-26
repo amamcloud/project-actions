@@ -1,0 +1,10 @@
+name: Project Management
+description: Sync issues, pull requests and milestones with projects
+author: AmAm Cloud
+inputs:
+  command:
+    description: Executable command name
+    default: noop
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
