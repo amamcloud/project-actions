@@ -5,7 +5,7 @@
   "description": "TypeScript template action",
   "main": "lib/main.js",
   "scripts": {
-    "build": "parcel build -d lib -t node --no-source-maps src/main.ts",
+    "build": "parcel build -d lib -t node --no-source-maps --bundle-node-modules src/main.ts",
     "test": "jest"
   },
   "repository": {
